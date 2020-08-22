@@ -45,12 +45,6 @@ app.get('/', function(req, res, next) {
     }
     res.render('layout')
 })
-app.get('/dataA001', function(req, res, next) {
-    res.locals.pageData = {
-        title: 'Home Page'
-    }
-    res.render('dataA001')
-})
 
 // path สำหรับ MongoDB ของเรา
 app.use("/api/sensor", Sensor);
