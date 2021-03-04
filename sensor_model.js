@@ -35,9 +35,9 @@ var SensorSchema = mongoose.Schema({
     }
 }, {
     // กำหนด collection ของ MongoDB หรือจะไม่กำหนดก็ได้
-    collection: "DataSensor2"
+    collection: "Coconut"
 });
 
 // ถ้าไม่ได้กำหนด collection ข้างบน default จะเป็น "Sensor"
-var Sensor = mongoose.model("DataSensor2", SensorSchema);
+var Sensor = mongoose.model("Coconut", SensorSchema);
 module.exports = Sensor;

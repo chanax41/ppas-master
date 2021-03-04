@@ -6,11 +6,11 @@ var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var t, h
 const path = require('path');
-var mongo_uri = "mongodb+srv://adminx:UlGdHV4P5g4DEMOY@cluster-test-vgzl8.gcp.mongodb.net/Mongo-Test?retryWrites=true&w=majority";
+var mongo_uri = "mongodb+srv://adminx2:uEmdTe1NbokoYFxe@ppas.vgzl8.gcp.mongodb.net/PPAS-2?retryWrites=true&w=majority";
 var Sensor = require("./sensor_router");
 
 mongoose.Promise = global.Promise;
-mongoose.connect(mongo_uri, { useNewUrlParser: true, useUnifiedTopology: true }).then(
+mongoose.connect(mongo_uri, { useNewUrlParser: true }).then(
     () => {
         console.log("[success] task 2 : connected to the database ");
     },
